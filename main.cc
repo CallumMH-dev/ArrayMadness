@@ -1,4 +1,5 @@
 #include <iostream>
+
 const unsigned HEIGHT = 20;
 const unsigned WIDTH  = 20;
 int array[HEIGHT*WIDTH];
@@ -21,6 +22,7 @@ bool CHANGE_ELEMENT_VIA_COORDINATES(int* array, unsigned x = 0, unsigned y = 0)
  if( x >= WIDTH || y >= HEIGHT ){ return 1; } else { array[y * WIDTH + x] = 1; }
  return 0;
 }
+
 int main()
 {
  INIT_ARRAY(array);
